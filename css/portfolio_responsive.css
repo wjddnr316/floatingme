@@ -1,0 +1,183 @@
+@meta charset="utf-8";
+
+@media all and (min-width:1281px){
+    header.gnb_header nav.gnb_menu_wrap,
+    header.gnb_header nav.gnb_sub_wrap{
+        min-width:381px;
+    }
+    
+    div.animation-container{min-width:800px;} 
+    div.skill-title-wrap{min-width:476px;}
+    div.my-skill{min-width:1143px;}
+   
+}
+
+
+@media all and (min-width:1025px) and (max-width:1280px){
+    header.gnb_header nav.gnb_menu_wrap,
+    header.gnb_header nav.gnb_sub_wrap{
+        min-width:381px;
+    }
+    header.gnb_header nav.gnb_menu_wrap{left:2.5%;}
+    header.gnb_header nav.gnb_sub_wrap{right:2.5%;}
+    
+    div.animation-container{width:80%;}
+    
+    div.skill-title-wrap{min-width:476px;}
+    div.my-skill{width:95%;}
+    div.my-skill div.skill-depths>p{padding:15px;}
+    
+    /*포트폴리오*/
+    
+    div.responsive-desktop{width:40%; left:5%;}
+    div.responsive-mobile{width:13%; left:0%; top:290px;}
+    div.responsive-tablet{width:27%; left:24%; top:325px;}
+    div.projectdetail{width:50%;}
+    div.introduce-wrap{left:105%; width:90%; }
+    div.about-sitemap li.sitemap-list a{width:80px; font-size:.8em;}
+    
+    article.right-content-project a.border-effect{right:0;}
+    article.left-content-project a.border-effect{left:0;}
+    
+    div.only-desktop{width:55%;left:45%;}
+    article.left-content-project div.introduce-wrap{margin-left:2.5%;}
+}
+
+
+@media all and (min-width:768px) and (max-width:1024px){
+    body{font-size:.925em;}
+    
+    header.gnb_header nav.gnb_menu_wrap,
+    header.gnb_header nav.gnb_sub_wrap{
+        min-width:381px;
+    }
+    header.gnb_header nav.gnb_menu_wrap{left:2.5%;}
+    header.gnb_header nav.gnb_sub_wrap{right:2.5%;}
+    
+    div.animation-container{width:85%;}
+    div.animation-container h1{font-size:5em;}
+    div.animation-container svg {
+    font-size:5em;
+    padding-left:05px;
+}
+    
+    div.skill-title-wrap{min-width:476px;}
+    div.my-skill{width:90%;}
+    div.my-skill div.skill-depths{width:100%; height:450px;}
+    div.my-skill div.skill-depths img{width:50%; left:80%; top:-70px; transform:translateX(-50%);}
+    div.my-skill div.skill-depths>p{padding:10px 15px;}
+    
+    /*포트폴리오*/
+    article.project{height:600px;}
+    div.responsive-desktop{width:50%; left:0%; top:130px;}
+    div.responsive-mobile{width:14%; left:-2.5%; top:310px;}
+    div.responsive-tablet{width:28%; left:23%; top:340px;}
+    div.projectdetail{width:50%; top:170px;}
+    div.projectdetail>h1{font-size:2em;}
+    article.right-content-project div.projectdetail{padding-left:30px; }
+    div.introduce-wrap{left:105%; width:90%;}
+    div.about-sitemap li.sitemap-list a{width:80px; font-size:.8em;}
+    
+    article.right-content-project a.border-effect{right:0;}
+    article.left-content-project a.border-effect{left:0;}
+    article.yuhan-project a.border-effect:nth-child(2){display:none;}
+    article.ju-project a.border-effect:nth-child(2){display:none;}
+    article.ju-project a.border-effect:nth-child(1){opacity:1; visibility:visible;}
+    article.disney-project a.border-effect:nth-child(2){display:none;}
+    
+    div.only-desktop{width:60%;left:45%;top:170px;}
+    div.only-desktop.aladin-desktop{top:150px;}
+    article.left-content-project div.projectdetail{padding-right:30px;}
+    article.left-content-project div.introduce-wrap{margin-left:2.5%;}
+    
+}
+
+
+@media all and (max-width:767px){
+    header.gnb_header nav.gnb_menu_wrap{
+        left:0;
+        width:100%;
+        top:0;
+    }
+    nav.gnb_menu_wrap li.progress-bar{display:none;}
+    #toggle:checked~div.wrap>header#gnb>nav#gnb_menu{top:100%; background:#fff; border-bottom:1px solid #ddd;}
+    header.gnb_header nav.gnb_sub_wrap{display:none;}
+    
+    div.animation-container{width:90%;}
+    div.animation-container h1{font-size:2em; animation:none;}
+    div.animation-container svg {
+    font-size:2em;
+    margin-left:10px;
+}
+    div.scrolldown{bottom:0;}
+    
+    div.skill-title-wrap{width:90%;}
+    div.skill-title-wrap>h1:nth-child(1),div.skill-title-wrap>h1:nth-child(2){animation:none;}
+    div.btn{display:none;}
+    
+    div.my-skill{width:90%; height:auto;}
+    div.my-skill div.skill-depths{width:100%; margin-top:20px;}
+    div.my-skill div.depth3{margin-bottom:50px;}
+    
+    /*포트폴리오*/
+    article.project{height:1500px;}
+    article.ju-project{height:1600px;}
+    div.half-container{width:50%;}
+    div.responsive-desktop{width:90%; left:5%;}
+    div.responsive-mobile{width:30%; left:-2%; top:220px;}
+    div.responsive-tablet{width:40%; left:60%; top:300px;}
+    
+    article.right-content-project div.background-gd{width:50%;}
+    
+    div.projectdetail{width:90%; left:5%; top:450px; text-align:center;}
+    div.projectdetail div.close-btn{display:none;}
+    article.right-content-project div.projectdetail{left:5%; padding-left:0;}
+    div.projectdetail>h1{width:100%; font-size:1.4em;}
+    ul.about-project.accordian{
+        width:100%; 
+        overflow:hidden; 
+        display:flex; justify-content:center; align-items:center;
+    }
+    ul.about-project>li{font-size:.75em;}
+    li.project-menu{width:50%; float:left;}
+    li.project-menu>a{display:none;}
+    div.introduce-wrap{
+        left:0; top:300px; width:100%; 
+        opacity:1; visibility:visible; 
+        transform:translate(0);
+        -webkit-transform:translate(0);
+    }
+    article.left-content-project div.introduce-wrap{
+        left:0; text-align:center; 
+        transform:translate(0);
+        -webkit-transform:translate(0);
+    }
+    
+    li.project-menu:nth-child(2) div.introduce-wrap{top:650px;}
+    .ju-project li.project-menu:nth-child(1) div.introduce-wrap{top:200px;}
+    li.project-menu:nth-child(3) div.introduce-wrap{display:none;}
+    
+    article.left-content-project div.background-gd{width:50%;}
+    
+    div.only-desktop{width:110%;left:-5%;}
+    article.left-content-project div.projectdetail{padding-right:0;}
+    
+    span.allow{display:none;}
+    
+    div.project-link{display:flex; justify-content:center; align-items:center; margin:0;}
+    div.project-link a.border-effect{width:50%; font-size:.7em;}
+    
+
+    article.ju-project a.border-effect,article.yuhan-project a.border-effect,article.disney-project a.border-effect{display:none;}
+    article.yuhan-project a.border-effect.demo,article.disney-project a.border-effect.demo{display:block;}
+    
+    article.right-content-project.active,
+    article.left-content-project.active{transform:translate(0);-webkit-transform:translate(0);}
+    .today_weather{display:none;}
+}
+@media all and (max-width:320px){
+    div.my-skill{margin-top:50px;}
+    div.my-skill div.skill-depths{width:100%; margin-top:20px;}
+    div.skill-depths.depth1 .program-wrap{bottom:10px;}
+    section{margin-top:100px;}
+}

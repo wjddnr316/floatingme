@@ -52,46 +52,10 @@
                     var width = $(window).width();
                     var el = clickTg.position().top;
                     var nextEl = el + clickTg.height();
-                    /*if(width > 1024){//데스크탑*/
                     if ( scr >= nextEl || scrBottom <= el){
-                        var menu = clickTg.find(".introduce-wrap");
-                        $(clickTg,menu).removeClass("active");
+                        $(clickTg).removeClass("active");
                         $(".introduce-wrap").removeClass("active");
-                        /*};*/
-                        
-                        /*if (scr >= 2800 || scr <= 1200){
-                            $("article.yuhan-project, article.yuhan-project li.project-menu div.introduce-wrap").removeClass("active");
-                        }
-                        if (scr >= 3600 || scr <= 2200){
-                            $("article.jansport-project, article.jansport-project li.project-menu div.introduce-wrap").removeClass("active");
-                        }
-                        if (scr >= 4500 || scr <= 3040){
-                            $("article.ju-project, article.ju-project li.project-menu div.introduce-wrap").removeClass("active");    
-                        }
-                        if (scr >= 5450 || scr <= 3900){
-                            $("article.aladin-project, article.aladin-project li.project-menu div.introduce-wrap").removeClass("active");
-                        }
-                        if (scr >= 6300 || scr <= 4800){
-                            $("article.disney-project, article.disney-project li.project-menu div.introduce-wrap").removeClass("active");
-                        }*/
-                    }
-                    /*if (width <= 1023){//테블릿
-                        if ( scr >= 3500 || scr <= 2100){
-                            $("article.yuhan-project, article.yuhan-project li.project-menu div.introduce-wrap").removeClass("active");
-                        }
-                        if ( scr >= 4100 || scr <= 2850){
-                            $("article.jansport-project, article.jansport-project li.project-menu div.introduce-wrap").removeClass("active");
-                        }
-                        if ( scr >= 4900 || scr <= 3550){
-                            $("article.ju-project, article.ju-project li.project-menu div.introduce-wrap").removeClass("active");    
-                        }
-                        if ( scr >= 5600 || scr <= 4300){
-                            $("article.aladin-project, article.aladin-project li.project-menu div.introduce-wrap").removeClass("active");
-                        }
-                        if ( scr >= 6400 || scr <= 5000){
-                            $("article.disney-project, article.disney-project li.project-menu div.introduce-wrap").removeClass("active");
-                        }
-                    }*/
+                    };
                 });
                 $("div.close-btn").click(function(){
                    $(this).parents(".project").removeClass("active").find(".introduce-wrap").removeClass("active"); 

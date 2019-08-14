@@ -49,6 +49,11 @@
             $("div.close-btn").click(function(){
                $(this).parents(".project").removeClass("active").find(".introduce-wrap").removeClass("active"); 
             });
+            $(".view_more").click(function(){
+               $(".aladin-project,.disney-project").slideDown(500); 
+                $(this).parent(".view_more_btn").css("display","none");
+                return false;
+            });
         });
         
         $(window).on("scroll",function(){//스크롤

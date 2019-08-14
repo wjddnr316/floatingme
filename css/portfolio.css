@@ -466,7 +466,8 @@ section.contact ul.sns-icon li{width:100%;}
 section.contact ul.sns-icon li a{display:block; margin-top:10px;}
 section.contact ul.sns-icon li img{ width:100%;}
 
-#scrolltop{position:fixed; right:5%; bottom:50%;}
+/*#scrolltop{position:fixed; right:5%; bottom:50%;}
+#scrollbottom{position:fixed; right:5%; bottom:60%;}*/
 .today_weather{
     position:fixed; width:100px;  right: 20px; bottom:20px; font-size:0.8em; transition:all .5s ease;}
 .today_weather img{width:50%; float:left; }
@@ -597,6 +598,7 @@ a.view_more{/*view more버튼*/
             display:inline; 
             transform:translateY(5px); 
             -webkit-transform:translateY(5px); 
+            transition:.25s transform linear;
         }
         a.view_more span.bt_line{
             width:70%; left:50%; bottom:0; 

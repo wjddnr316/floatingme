@@ -1,7 +1,17 @@
  $(function(){
             $(".menu-btn").on("click",function(){
-              $(".menu-btn,header.gnb_header ul li a").toggleClass("on"); 
+                $(".menu-btn,header.gnb_header ul li a").toggleClass("on"); 
             });
+            /*var menuBtn = $(".gnb-menu a");
+            var i;
+            for ( i = 0 ; i < menuBtn.length; i ++){
+                $(menuBtn[i]).hover(function(){
+                    
+                    console.log(this);
+                },function(){
+                    $("li.progress-bar").removeClass("on" + i);
+                });
+            };*/
             //네비 언더바 효과
             $(".gnb-menu1 a").hover(function(){
               $("li.progress-bar").addClass("on1");  
@@ -24,9 +34,11 @@
                 },500);
                 return false;
             });
-
+     
             $("li.gnb-menu a").click(function(){      
-                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 400);
+                $('html,body').animate({
+                    scrollTop:$(this.hash).offset().top
+                }, 400);
                 return false;
             });
 
@@ -53,8 +65,8 @@
                     var el = clickTg.position().top;
                     var nextEl = el + clickTg.height();
                     if ( scr >= nextEl || scrBottom <= el){
+                        $(".introduce-wrap", clickTg).removeClass("active");
                         $(clickTg).removeClass("active");
-                        $(".introduce-wrap").removeClass("active");
                     };
                 });
                 $("div.close-btn").click(function(){
